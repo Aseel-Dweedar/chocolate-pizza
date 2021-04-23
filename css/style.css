@@ -1,103 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-/* font-family: 'Anton', sans-serif; chocolate*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/*************************************/
 
-
-
-body{
+body {
     width: 900px;
     margin: auto;
 }
 
-
-header{
+header {
     position: relative;
     height: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-
-
-.title{
+.logo {
     position: absolute;
-    width: 200px;
-    left: 40px;
-    top: 1px;
-
+    top: 5px;
+    width: 45px;
 }
-.title p:nth-child(1){
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+
+header p:nth-child(2) {
+    position: absolute;
+    left: 45px;
+    top: 5px;
+    font-family: 'Yellowtail';
+    font-style: italic;
+    font-variant: normal;
+    line-height: 40px;
+    font-size: 40px;
     font-weight: bold;
+    margin: 0px;
+    display: table-cell;
 }
 
-
-.title p:nth-child(2){
+header p:nth-child(3) {
+    position: absolute;
+    left: 50px;
+    top: 45px;
     font-size: 10px;
     color: gray;
+    margin: 0px;
+    width: 200px;
+    margin: 0px;
 }
-.contact{
-    width: 400px;
+
+.contact {
+    position: absolute;
+    width: 235px;
     right: 0%;
     top: 10px;
-    position: absolute;
 }
-.last{
+
+.last {
     padding-left: 10px;
 }
 
-main h1{
-    font-family: 'Anton', sans-serif;
-
-}
-
-.ph{
-    width: 200px;
+.pizza {
+    width: 300px;
     display: inline-block;
-
 }
-main section:nth-child(2){
+
+hr {
+    height: 4px;
+    border: none;
+    background-image: url('hr-img.png');
+    background-repeat: repeat-x;
+}
+
+main h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.pizza p {
+    color: gray;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.print {
     display: inline;
     float: right;
-    width: fit-content;
 }
 
-.ph p{
-color: gray;
-font-size: 10px;
-width: fit-content;
+.print p {
+    display: inline;
 }
 
-
-#mainp {
+#mainP {
     color: gray;
     font-size: 16px;
+    text-indent: 40px;
+    line-height: 22px;
 }
 
-.alllist{
-    
+.container {
+    position: relative;
+    margin: 30px 0px;
+}
+
+.allList {
+    position: absolute;
     display: grid;
     grid-template-columns: 50% 50%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
+    top: 40px;
+    left: 100px;
 }
-/*
-.form1 {
 
+.form {
     display: grid;
     grid-template-columns: 20px 1fr;
-    gap: 2px;
-}*/
-label{
+    font-family: 'Kurale', serif;
+    color: #464f41;
+    align-items: center;
+}
+
+label {
     font-size: 20px;
 }
-.container {
-position: relative;
 
+.share {
+    position: relative;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 80px 1fr 250px;
 }
 
+.share p {
+    display: inline-block;
+    margin: 0px;
+    width: fit-content;
+    color: #536162;
+}
 
+button {
+    position: absolute;
+    border: none;
+    background-color: #e9896a;
+    color: white;
+    width: 200px;
+    height: 50px;
+    right: 0;
+    top: 0px;
+}
 
+footer {
+    margin-top: 70px;
+    text-align: center;
+    color: gray;
+}
